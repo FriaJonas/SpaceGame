@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Enemy.png" />
+    <None Remove="Images\Explosion.png" />
+    <None Remove="Images\Lifebar.png" />
+    <None Remove="Images\Parcel.png" />
+    <None Remove="Images\Shot.png" />
+    <None Remove="Images\SpaceShip.png" />
+    <None Remove="Images\Space_bg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Enemy.png" />
+    <Resource Include="Images\Explosion.png" />
+    <Resource Include="Images\Lifebar.png" />
+    <Resource Include="Images\Parcel.png" />
+    <Resource Include="Images\Shot.png" />
+    <Resource Include="Images\SpaceShip.png" />
+    <Resource Include="Images\Space_bg.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Sounds\explosionSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sounds\laserSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sounds\wind.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
